@@ -1,0 +1,11 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    string myname = TempData.Peek("name").ToString();
+
+}
+<h2> @TempData["name"]</h2>
+<h2>@TempData["location"]</h2>
+
+<a asp-action="Method3" asp-controller="Demo">Goto Method3 </a>

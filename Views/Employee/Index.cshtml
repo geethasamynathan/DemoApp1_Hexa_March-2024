@@ -1,0 +1,12 @@
+﻿@model IEnumerable<DemoApp1.Models.Employee>
+
+<ul>
+    @foreach(Employee emp in @Model)
+    {
+        <li>@emp.EmployeeId</li>
+        <li>@emp.EmployeeName</li>
+        <li>@emp.Gender</li>
+        <li>@emp.Designation</li>
+        <li>@emp.Salary</li>
+        <br/>
+    }
